@@ -70,13 +70,14 @@ COUNT(*) AS EXERCISE_COUNT
 FROM GYM_DB.PUBLIC.GYM_EXERCISES
 GROUP BY C5
 ORDER BY EXERCISE_COUNT DESC;
+
 Dashboard Update Test:
 To verify that the dashboard updates correctly when data changes:
 
-Initial member count in the dashboard: 973
-A new record was inserted into the GYM_MEMBERS table using an INSERT statement.
-The dashboard was refreshed.
-Updated member count displayed in the dashboard: 974
+1) Initial member count in the dashboard: 973
+2) A new record was inserted into the GYM_MEMBERS table using an INSERT statement.
+3) The dashboard was refreshed.
+4) Updated member count displayed in the dashboard: 974
 
 This confirms that the dashboard reflects changes made to the underlying Snowflake tables.
 
