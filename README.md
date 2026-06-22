@@ -14,8 +14,8 @@ Dashboard Access Information:
 The dashboard is deployed as a Snowflake Streamlit application and is hosted within the Snowflake platform.
 The dashboard URL cannot be accessed publicly like a normal website. To open the dashboard, a user must have:
 1) A valid Snowflake account.
-2)Access permissions to the Snowflake environment where the application is deployed.
-3)Snowflake authentication credentials.
+2) Access permissions to the Snowflake environment where the application is deployed.
+3) Snowflake authentication credentials.
 
 Because Snowflake is a private cloud data platform, users without a Snowflake account and the required permissions will not be able to access the dashboard through the provided URL.
 
