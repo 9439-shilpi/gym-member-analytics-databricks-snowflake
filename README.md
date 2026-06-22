@@ -81,9 +81,9 @@ Updated member count displayed in the dashboard: 974
 This confirms that the dashboard reflects changes made to the underlying Snowflake tables.
 
 ChatGPT Prompts Used:
-How do I connect an AWS S3 object storage bucket with Snowflake?
-How do I create an IAM role in AWS and connect it to Snowflake?
-How do I create an external stage in Snowflake for loading data from AWS S3?
-How do I build a Streamlit dashboard inside Snowflake?
-How do I deploy a Streamlit application within the Snowflake environment?
-How do I deploy a Streamlit application within the Snowflake environment?
+1)How do I connect an AWS S3 object storage bucket with Snowflake?
+2)How do I create an IAM role in AWS and connect it to Snowflake?
+3)How do I create an external stage in Snowflake for loading data from AWS S3?
+4)How do I build a Streamlit dashboard inside Snowflake?
+5)How do I deploy a Streamlit application within the Snowflake environment?
+6)How do I deploy a Streamlit application within the Snowflake environment?
