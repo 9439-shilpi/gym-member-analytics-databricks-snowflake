@@ -6,9 +6,6 @@ By Jatin Bhangotra
 Dashboard URL:
 https://app.snowflake.com/streamlit/xgikphl/vk34735/#/apps/dbnsw2p5zshlr2rok3sf
 
-Git Repo URL:
-https://github.com/9439-shilpi/gym-member-analytics-databricks-snowflake.git
-
 Dashboard Access Information:
 The dashboard is deployed as a Snowflake Streamlit application and is hosted within the Snowflake platform.
 The dashboard URL cannot be accessed publicly like a normal website. To open the dashboard, a user must have:
