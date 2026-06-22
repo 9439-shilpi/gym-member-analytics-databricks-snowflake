@@ -284,7 +284,216 @@ Key outcomes:
 - Determined the number of exercises available for each muscle group.
 - Built visual analytics to support fitness-related decision making.
 
+---
+-----------------------------------------------------------------------
+## GYM WORKOUT & EXERCISE ANALYTICS PROJECT  - SATHWIK VELLANKI
+------------------------------------------------------------------------
+
+Dashboard URL: https://dbc-915f6f1a-7868.cloud.databricks.com/editor/notebooks/3299344356147086?o=7474656938187163#command/4588876944504760
+
+
+## Project Summary
+
+This project leverages Databricks, AWS S3, PySpark, and SQL to analyze fitness-related datasets and uncover patterns in workout performance and exercise availability. The analysis focuses on evaluating calorie expenditure across workout types and understanding exercise distribution among different muscle groups.
+
+The project demonstrates a complete cloud-based analytics pipeline, beginning with data acquisition and ending with visualization-driven insights.
+
+---
+
+## Dataset Information
+
+### Dataset 1: Gym Members Exercise Tracking
+
+This dataset contains information related to workout sessions performed by gym members.
+
+Key Fields:
+
+* Workout_Type
+* Calories_Burned
+* Age
+* Gender
+* Session_Duration
+* Experience_Level
+
+### Dataset 2: Fitness Exercises Dataset
+
+This dataset contains information about exercises and their targeted muscle groups.
+
+Key Fields:
+
+* Exercise_Name
+* muscle_gp
+* Equipment
+* Rating
+* Description
+
+---
+
+## Technology Stack
+
+* Databricks
+* PySpark
+* SQL
+* AWS S3
+* Kaggle Datasets
+* Databricks Visualization Tools
+
+---
+
+## Data Pipeline
+
+Kaggle Datasets
+│
+▼
+AWS S3
+│
+▼
+Databricks
+│
+▼
+PySpark & SQL
+│
+▼
+Dashboard Visualizations
+│
+▼
+Actionable Insights
+
+---
+
+## Implementation Steps
+
+### Data Acquisition
+
+* Downloaded fitness datasets from Kaggle.
+* Verified file structure and schema consistency.
+
+### Cloud Storage
+
+* Created an AWS S3 bucket.
+* Uploaded all source CSV files to cloud storage.
+
+### Data Ingestion
+
+* Connected Databricks with AWS S3.
+* Imported datasets into Spark DataFrames.
+
+### Data Processing
+
+* Cleaned and explored the datasets.
+* Applied aggregations using PySpark and SQL.
+* Generated analytical datasets for reporting.
+
+### Visualization
+
+* Created interactive charts in Databricks.
+* Evaluated workout trends and exercise coverage.
+
+---
+
+## Analysis 1: Average Calories Burned by Workout Category
+
+### Objective
+
+Measure the average calories burned across workout types and identify the most intensive workouts.
+
+### PySpark Code
+
+```python
+from pyspark.sql.functions import avg
+
+obj1 = (
+    df2.groupBy("Workout_Type")
+       .agg(avg("Calories_Burned").alias("Avg_Calories"))
+       .orderBy("Avg_Calories", ascending=False)
+)
+
+display(obj1)
+```
+
+### Visualization
+
+* Chart Type: Bar Chart
+* X-Axis: Workout Type
+* Y-Axis: Average Calories Burned
+
+### Insights
+
+* HIIT produced the highest average calorie expenditure.
+* Strength Training and Yoga generated similar calorie-burning results.
+* Cardio workouts maintained stable calorie output across participants.
+
+---
+
+## Analysis 2: Exercise Distribution by Muscle Group
+
+### Objective
+
+Determine how exercise routines are distributed among different muscle groups.
+
+### PySpark Code
+
+```python
+obj2 = (
+    df1.groupBy("muscle_gp")
+       .count()
+       .withColumnRenamed("count", "Number_of_Exercises")
+       .orderBy("Number_of_Exercises", ascending=False)
+)
+
+display(obj2)
+```
+
+### Visualization
+
+* Chart Type: Bar Chart
+* X-Axis: Muscle Group
+* Y-Axis: Number of Exercises
+
+### Insights
+
+* Quadriceps contained the largest number of exercises.
+* Shoulder and Abdominal muscle groups also showed extensive exercise coverage.
+* Neck and Adductor groups had comparatively fewer exercises.
+
+---
+
+## Project Outcomes
+
+### Workout Analysis
+
+* Computed average calorie burn by workout category.
+* Compared workout efficiency across different training styles.
+
+### Exercise Analysis
+
+* Measured exercise counts by muscle group.
+* Identified muscle groups with the greatest exercise diversity.
+
+---
+
+## Key Findings
+
+* HIIT emerged as the most calorie-intensive workout type.
+* Larger muscle groups have a broader range of available exercises.
+* Visualization techniques simplified interpretation of workout data.
+* Cloud-based analytics enabled efficient processing of fitness datasets.
+
+---
+
+## Conclusion
+
+The project successfully implemented a complete analytics workflow using Databricks and AWS S3. Fitness datasets were collected, stored, processed, and visualized to generate meaningful insights related to workout performance and exercise distribution.
+
+Major achievements include:
+
+* Evaluating calorie expenditure across workout categories.
+* Analyzing exercise availability for different muscle groups.
+* Building visual dashboards for data interpretation.
+* Demonstrating practical use of PySpark and SQL in cloud analytics.
+
+The results highlight how modern data engineering tools can be applied to the fitness domain to support evidence-based decision-making and workout optimization.
 
 ## 👩‍💻 Author
 
-**Sunandana Sahoo**,**Jatin Bhangotra**
+**Sunandana Sahoo**,**Jatin Bhangotra**,**Sathwik Vellanki**
