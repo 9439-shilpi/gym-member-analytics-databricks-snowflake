@@ -166,20 +166,20 @@ Objective 1: Average Calories Burned by Workout Type
 Business Goal
 Determine which workout types burn the highest average number of calories.
 
-SQL Query
+### SQL Query
 
-sql
+```sql
 SELECT
     Workout_Type,
     AVG(Calories_Burned) AS Avg_Calories
 FROM gym_members
 GROUP BY Workout_Type
 ORDER BY Avg_Calories DESC;
+```
 
+### PySpark Code
 
-PySpark Code
-
-
+```python
 from pyspark.sql.functions import avg
 
 obj1 = (
@@ -189,6 +189,7 @@ obj1 = (
 )
 
 display(obj1)
+```
 
 
 Visualization
