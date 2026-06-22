@@ -54,21 +54,25 @@ Business Objective 1:
 Determine the average calories burned for each workout type.
 
 SQL Query:
+```sql
 SELECT WORKOUT_TYPE,
 AVG(CALORIES_BURNED) AS AVG_CALORIES
 FROM GYM_DB.PUBLIC.GYM_MEMBERS
 GROUP BY WORKOUT_TYPE
 ORDER BY AVG_CALORIES DESC;
+```
 
 Business Objective 2:
 Determine the number of exercises available for each muscle group.
 
 SQL Query:
+```sql
 SELECT C5 AS MUSCLE_GROUP,
 COUNT(*) AS EXERCISE_COUNT
 FROM GYM_DB.PUBLIC.GYM_EXERCISES
 GROUP BY C5
 ORDER BY EXERCISE_COUNT DESC;
+```
 
 Dashboard Update Test:
 To verify that the dashboard updates correctly when data changes:
@@ -286,4 +290,4 @@ Key outcomes:
 
 ## 👩‍💻 Author
 
-**Sunandana Sahoo**
+**Sunandana Sahoo**,**Jatin Bhangotra**
