@@ -1,5 +1,3 @@
-# gym-member-analytics-databricks-snowflake
-
 --------------------------------------------------
 GYM ANALYTICS DASHBOARD PROJECT (SNOWFLAKE)
 By Jatin Bhangotra
