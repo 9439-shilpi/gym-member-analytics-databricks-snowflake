@@ -93,6 +93,12 @@ ChatGPT Prompts Used:
 --------------------------------------------------
 Gym Member Analytics Project - By SUNANDANA SAHOO
 --------------------------------------------------
+
+Dashboard URL: https://dbc-aeb70767-6a81.cloud.databricks.com/dashboardsv3/01f16e4c08d51dfb9d843215be1bc01b/published?o=7474647819224844
+
+Git Repo URL: https://github.com/9439-shilpi/gym-member-analytics-databricks-snowflake.git
+
+
  Project Overview
 
 This project analyzes gym workout and exercise data using Databricks, PySpark, SQL, AWS S3, and Kaggle datasets. The objective is to generate meaningful fitness insights by analyzing workout performance and exercise distribution across muscle groups.
