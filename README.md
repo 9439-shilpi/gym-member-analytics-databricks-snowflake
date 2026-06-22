@@ -1,10 +1,9 @@
 # gym-member-analytics-databricks-snowflake
 
-==================================================
-      GYM ANALYTICS DASHBOARD PROJECT
-               (SNOWFLAKE)
-            By Jatin Bhangotra
-==================================================
+--------------------------------------------------
+GYM ANALYTICS DASHBOARD PROJECT (SNOWFLAKE)
+By Jatin Bhangotra
+--------------------------------------------------
 
 Dashboard URL:
 https://app.snowflake.com/streamlit/xgikphl/vk34735/#/apps/dbnsw2p5zshlr2rok3sf
